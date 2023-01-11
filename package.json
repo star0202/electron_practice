@@ -4,9 +4,8 @@
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc",
     "dev": "tsc-watch --onSuccess \"electron ./dist/index.js\"",
-    "start": "electron ./dist/index.js"
+    "build": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,22 @@
   "homepage": "https://github.com/star0202/electron_practice#readme",
   "devDependencies": {
     "electron": "^22.0.1",
+    "electron-builder": "^23.6.0",
     "tsc-watch": "^6.0.0"
+  },
+  "build": {
+    "appId": "dev.pikokr",
+    "productName": "Pikokr Misskey",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   }
 }
