@@ -1,6 +1,6 @@
 {
   "name": "pikokr_misskey_desktop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Desktop App for pikokr.dev Misskey",
   "main": "./dist/index.js",
   "scripts": {
