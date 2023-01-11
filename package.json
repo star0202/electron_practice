@@ -1,7 +1,7 @@
 {
-  "name": "electron_practice",
+  "name": "pikokr_misskey_desktop",
   "version": "0.1.0",
-  "description": "",
+  "description": "Desktop App for pikokr.dev Misskey",
   "main": "./dist/index.js",
   "scripts": {
     "dev": "tsc-watch --onSuccess \"electron ./dist/index.js\"",
