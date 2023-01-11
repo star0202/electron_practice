@@ -7,6 +7,7 @@ app.on('ready', () => {
     mainWindow = new BrowserWindow({
         show: false
     })
+    mainWindow.removeMenu()
     mainWindow.loadURL('https://pikokr.dev/')
     mainWindow.maximize()
 })
