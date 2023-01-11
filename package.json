@@ -5,7 +5,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "dev": "tsc-watch --onSuccess \"electron ./dist/index.js\"",
-    "build": "electron-builder"
+    "build": "tsc",
+    "pack": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,9 @@
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
-    }
+    },
+    "extraFiles": [
+      "assets"
+    ]
   }
 }
