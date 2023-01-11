@@ -9,14 +9,14 @@ app.on('ready', () => {
     })
     mainWindow.loadURL('https://pikokr.dev/')
     mainWindow.maximize()
-    mainWindow.on('close', event => {
-        event.preventDefault()
-        mainWindow.hide()
-    })
 })
 
 
 app.whenReady().then(() => {
+    mainWindow.on('close', event => {
+        event.preventDefault()
+        mainWindow.hide()
+    })
     let tray = new Tray(path.dirname(path.basename(__dirname)) + '/assets/icon.ico')
     const contextMenu = Menu.buildFromTemplate([
         {
@@ -45,4 +45,9 @@ app.whenReady().then(() => {
     ])
     tray.setToolTip('Pikokr Misskey')
     tray.setContextMenu(contextMenu)
+    tray.on('double-click', () => {
+        if (!mainWindow.isVisible()) {
+            mainWindow.maximize()
+        }
+    })
 })
