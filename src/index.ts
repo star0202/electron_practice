@@ -21,14 +21,14 @@ app.whenReady().then(() => {
     const contextMenu = Menu.buildFromTemplate([
         {
             label: 'Chat', type: 'normal', click: () => {
-                window.loadURL('https://pikokr.dev/my/messaging')
-                window.focus()
+                mainWindow.loadURL('https://pikokr.dev/my/messaging')
+                mainWindow.maximize()
             }
         },
         {
             label: 'Notification', type: 'normal', click: () => {
-                window.loadURL('https://pikokr.dev/my/notifications')
-                window.focus()
+                mainWindow.loadURL('https://pikokr.dev/my/notifications')
+                mainWindow.maximize()
             }
         },
         {
