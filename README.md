@@ -1,4 +1,4 @@
 # pikokr_misskey_desktop
-Only for Windows
+Only Tested in Windows
 
 Made  [Pikokr Misskey](https://pikokr.dev)
