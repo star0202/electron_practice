@@ -39,7 +39,7 @@ app.whenReady().then(() => {
         },
         {
             label: 'Quit', type: 'normal', click: () => {
-                app.quit()
+                app.exit()
             }
         }
     ])
