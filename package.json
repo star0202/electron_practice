@@ -1,0 +1,25 @@
+{
+  "name": "electron_practice",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc-watch --onSuccess \"electron ./dist/index.js\"",
+    "start": "electron ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/star0202/electron_practice.git"
+  },
+  "author": "Starcea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/star0202/electron_practice/issues"
+  },
+  "homepage": "https://github.com/star0202/electron_practice#readme",
+  "devDependencies": {
+    "electron": "^22.0.1",
+    "tsc-watch": "^6.0.0"
+  }
+}
